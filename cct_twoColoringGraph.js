@@ -104,38 +104,17 @@ function wanderThePath(vertex, prior, black, safety = 0){
     .forEach(adj => wanderThePath(adj, vertex.v, !black, ++safety))
 }
 
-
-export function runTwoColoringTestCases(ns){
-  const case1 = [4, [[0, 2], [0, 3], [1, 2], [1, 3]]]
-  const result1 = [0, 0, 1, 1]
-
-  const case2 = [3, [[0, 1], [0, 2], [1, 2]]]
-  const result2 = []
-
-  const case3 = [14, [[2,6],[0,12],[5,11],[0,10],[0,11],[7,12],[2,12],
-    [7,11],[6,13],[3,6],[2,11],[2,10],[4,5],[5,10],[7,10],[2,4],
-    [11,12],[4,13],[3,8],[0,6],[3,4],[1,4],[3,11],[1,8],[4,7]
-  ]
-  ]
-  const result3 = []
-
-  ns.tprint('Test Case 1:')
-  test(ns, case1, result1)
-
-  ns.tprint('Test Case 2:')
-  test(ns, case2, result2)
-
-  ns.tprint('Test Case 3:')
-  test(ns, case3, result3)
-}
-
-function test(ns, input, correctResult){
-  const result = twoColorGraph(input);
-  if(JSON.stringify(result) != JSON.stringify(correctResult)){
-    ns.tprint('wrong result')
-    ns.tprint(`expected: ${JSON.stringify(correctResult)}`)
-    ns.tprint(`received: ${JSON.stringify(result)}`)
-  }else{
-    ns.tprint('correct result')
+export const testCases = [
+  {
+    input: [4, [[0, 2], [0, 3], [1, 2], [1, 3]]],
+    result: [0, 0, 1, 1]
+  },{
+    input: [3, [[0, 1], [0, 2], [1, 2]]],
+    result: []
+  },{
+    input: [14, [[2,6],[0,12],[5,11],[0,10],[0,11],[7,12],[2,12],
+      [7,11],[6,13],[3,6],[2,11],[2,10],[4,5],[5,10],[7,10],[2,4],
+      [11,12],[4,13],[3,8],[0,6],[3,4],[1,4],[3,11],[1,8],[4,7]]],
+    result: []
   }
-}
+]

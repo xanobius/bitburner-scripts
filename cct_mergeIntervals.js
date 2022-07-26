@@ -19,7 +19,7 @@ export function mergeIntervals(input) {
   do {
     oldLength = merged.length
     merged = mergeEm(merged)
-  }while(oldLength != merged.length)
+  }while(oldLength !== merged.length)
 
   return merged.sort((a, b) => a[0] > b[0] ? 1 : -1)
 }
@@ -60,35 +60,12 @@ function mergeEm(input){
       []);
 }
 
-
-
-export function runMergerTestCases(ns){
-  const case1 = [
-    [5,7],[18,28],[6,14],[14,22],
-    [7,11],[20,26],[5,12],[11,14],
-    [17,21],[11,17],[7,16],[15,19],
-    [21,26],[7,15],[1,2],[8,16],
-    [14,15],[25,30],[1,5]
-  ]
-  const result1 = [[1, 30]]
-
-  const case2 = [[8, 10], [1, 3], [2, 6], [10, 16]]
-  const result2 = [[1, 6], [8, 16]]
-
-  ns.tprint('Test Case 1:')
-  testMerger(ns, case1, result1)
-
-  ns.tprint('Test Case 2:')
-  testMerger(ns, case2, result2)
-}
-
-function testMerger(ns, input, correctResult){
-  const result = mergeIntervals(input);
-  if(JSON.stringify(result) != JSON.stringify(correctResult)){
-    ns.tprint('wrong result')
-    ns.tprint(`expected: ${JSON.stringify(correctResult)}`)
-    ns.tprint(`received: ${JSON.stringify(result)}`)
-  }else{
-    ns.tprint('correct result')
+export const testCases = [
+  {
+    input: [[5,7],[18,28],[6,14],[14,22],[7,11],[20,26],[5,12],[11,14],[17,21],[11,17],[7,16],[15,19],[21,26],[7,15],[1,2],[8,16],[14,15],[25,30],[1,5]],
+    result: [[1, 30]]
+  },{
+    input: [[8, 10], [1, 3], [2, 6], [10, 16]],
+    result: [[1, 6], [8, 16]]
   }
-}
+]
