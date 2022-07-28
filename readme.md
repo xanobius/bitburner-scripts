@@ -26,7 +26,7 @@ To do so, mock the ns object to provide a tprint method (eq. console log).
 | 22 | Proper 2-Coloring of a Graph | ✅ | [cct_twoColoringGraph.js](cct_twoColoringGraph.js) |
 | 23 | Compression I: RLE Compression | ✅ | [cct_compressions.js](cct_compressions.js) |
 | 24 | Compression II: LZ Decompression | ✅ | [cct_compressions.js](cct_compressions.js) |
-| 01 |  Find Largest Prime Factor | ❌ | |
+| 01 | Find Largest Prime Factor | ❌ | |
 | 02 | Subarray with Maximum Sum | ❌ | |
 | 04 | Total Ways to Sum II | ❌ | |
 | 14 | Minimum Path Sum in a Triangle | ❌ | |
