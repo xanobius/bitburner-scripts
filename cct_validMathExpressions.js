@@ -26,7 +26,7 @@ function crawlPossibilities(remaining, expr, target){
     if(remaining === '04'){
       console.log('here we are')
       return []
-    }
+    }summit-uni
     expressions = operators
       .map(op => {
         //if(op === '/' && remaining === '0') return '' // prevent division by zero

@@ -23,6 +23,7 @@ To do so, mock the ns object to provide a tprint method (eq. console log).
 | 13 | Algorithmic Stock Trader IV | ✅ | [cct_stocks.js](cct_stocks.js) |
 | 19 | Find All Valid Math Expressions | ✅ | [cct_validMathExpressions.js](cct_validMathExpressions.js) |
 | 20 | HammingCodes: Integer to Encoded Binary | ✅ | [cct_hamming.js](cct_hamming.js) |
+| 21 | HammingCodes: Encoded Binary to Integer | ✅ | [cct_hamming.js](cct_hamming.js) |
 | 22 | Proper 2-Coloring of a Graph | ✅ | [cct_twoColoringGraph.js](cct_twoColoringGraph.js) |
 | 23 | Compression I: RLE Compression | ✅ | [cct_compressions.js](cct_compressions.js) |
 | 24 | Compression II: LZ Decompression | ✅ | [cct_compressions.js](cct_compressions.js) |
@@ -34,6 +35,5 @@ To do so, mock the ns object to provide a tprint method (eq. console log).
 | 16 | Unique Paths in a Grid II | ❌ | |
 | 17 | Shortest Path in a Grid | ❌ | |
 | 18 | Sanitize Parentheses in Expression | ❌ | |
-| 21 | HammingCodes: Encoded Binary to Integer | ❌ | |
 | 25 | Compression III: LZ Compression | ❌ | |
 
