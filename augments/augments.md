@@ -20,9 +20,9 @@
 |---|---|---|---|---|---|---|---|
 | 000 | * | - | - | NeuroFlux Governor - Level X | * + 1% | 750k | 500 |
 | 001 | 0,1 | - | - | Bitwire | +5% hacking skill | 10m | 3.75k |
-| 002 | 0 | - | - | Artificial Synaptic Potentiation | +5% hacking exp <br> 2% faster hgw<br> +5% hack success chance | 80m | 6.25k |
+| 002 | 0 | - | - | Artificial Synaptic Potentiation | +5% hacking exp <br>+2% faster hgw<br> +5% hack success chance | 80m | 6.25k |
 | 003 | 0 | 1 | - | Neural-Retention Enhancement | +25% hacking exp | 250m | 20k |
-| 004 | 0, 14, 15 | - | - | DataJack | 25% hack power | 450m | 112.5k |
+| 004 | 0, 14, 15 | - | - | DataJack | +25% hack power | 450m | 112.5k |
 | 005 | 0 | - | - | Embedded Netburner Module | +8% hacking skill | 250m | 15k |
 | 006 | 0, 1 | - | - | Cranial Signal Processor - Gen I | +5% hacking skill <br>+1% faster hgw | 70m | 10k |
 | 007 | 0, 1 | - |006| Cranial Signal Processor - Gen II | +7% hacking skill<br>+2% faster hgw<br>+5% hack success chance | 125m | 18.75k |
