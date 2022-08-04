@@ -96,6 +96,9 @@ export const testCases = [
   },{
     input: [6,4,9,3,3,7,10,0,8,3,7,7,2,10,6,6,0,0,0,7],
     result: 0
+  },{
+    input: [1,0,8,0],
+    result: 0
   }
 ]
 

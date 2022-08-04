@@ -26,7 +26,7 @@ function crawlPossibilities(remaining, expr, target){
     if(remaining === '04'){
       console.log('here we are')
       return []
-    }summit-uni
+    }
     expressions = operators
       .map(op => {
         //if(op === '/' && remaining === '0') return '' // prevent division by zero
@@ -66,8 +66,11 @@ export const testCases = [
   },{
     input: ["105", 5],
     result: ['1*0+5', '10-5']
-  },{
+  },/*{
     input: ["8758923041", -41],
     result : []
+  }*/,{
+    input: ["45996034436", 20],
+    result: []
   }
 ]
