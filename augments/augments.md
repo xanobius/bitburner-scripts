@@ -8,12 +8,16 @@
 | 01 | CyberSec         | |
 | 02 | Tian Di Hui      | |
 | 03 | The Black Hand   | |
+| 04 | BitRunners       | |
+| 05 | Netburners       | |
 | 11 | Sector 12        | 12, 13, 14, 15 |
 | 12 | Ishima           | 11, 13, 16 |
 | 13 | Volhaven         | 11, 12, 14, 15, 16 |
 | 14 | Chongqing        | 11, 13, 16 |
 | 15 | New Tokyo        | 11, 16, 13 | 
-| 16 | Aevum            | 12, 13, 14, 15 | 
+| 16 | Aevum            | 12, 13, 14, 15 |
+| 20 | Slum Snakes      | |
+| 21 | Tetrads          | | 
 
 ## Agumentations
 
@@ -51,6 +55,27 @@
 | 029 | 3               |   |   | Neurostimulator | +12% hacking exp<br>+2% faster hgw<br>+10% hack success chance | 3b | 50k |
 | 030 | 3               |   |008| Cranial Signal Processor - Gen IV | +2% faster hgw<br>+20% hack power<br>+25% grow power | 1.1b | 125k |
 | 031 | 3               | x |   | The Black Hand | +10% hacking skill<br>+15% strength skill<br>+15% dexterity skill<br>+2% faster hgw<br>+10% hack power | 550m | 100k |
+| 032 | 11              |   |023| Augmented Targeting II | +20% dexterity skill | 42.5m | 8.75 k |
+| 033 | 11              | x |   | CashRoot Starter Kit | Start with 1m<br>Start with BruteSSH | 125m | 12.5k |
+| 034 | 16              | x |   | PCMatrix | +7.77% charisma skill<br>+7.77% charisma exp<br>+7.77% reputation from factions and companies<br>+7.77% crime money<br>+7.77% crime success rate<br>+77.7% work money<br>Start with DeepscanV1 and AutoLink | 2b | 100k |
+| 035 | 4               |   |   | Artificial Bio-neural Network Implant | +12% hacking skill<br>+3% faster hgw<br>+15% hack power | 3b | 275k |
+| 036 | 4               |   |028| Embedded Netburner Module Core V2 Upgrade | +8% hacking skill<br>+15% hacking exp<br>+5% faster hgw<br>+5% hack success chance<br>+30% hack power | 4.5b | 1m |
+| 036 | 4               | x |   | Neural Accelerator | +10% hacking skill<br>+15% hacking exp<br>+20% hack power | 1.75b | 200k |
+| 037 | 4               | x |030| Cranial Signal Processor - Gen V | +30% hacking skill<br>+25 hack power<br>+75% grow power | 2.25b | 250k |
+| 038 | 4               | x |   | BitRunners Neurolink | +15% hacking skill<br>+20% hacking exp<br>+5% faster hgw<br>+10% hack success chance<br>Start with FTPCrack and relaySMTP | 4.375b | 875k |
+| 039 | 20              |   |   | Combat Rib I | +10% strength skill<br>+10% defense skill | ? | 7.5k |
+| 040 | 20,21           |   |   | LuminCloaking-V1 Skin Implant | +5% agility skill<br>+10% crime money | ? | 1.5k |
+| 041 | 20,21           |   |040| LuminCloaking-V2 Skin Implant | +10% defense skill<br>+10% agility skill<br>+25% crime money | ? | 5k |
+| 042 | 20              | x |   | SmartSonar Implant | +10% dexterity skill<br>+15% dexterity exp<br>+25% crime money | ? | 22.5k |
+| 043 | 5               | x |   | Hacknet Node CPU Architecture Neural-Upload | +15% hacknet production<br>-15% hacknet nodes cost | ? | 3.75k |
+| 044 | 5               | x |   | Hacknet Node Cache Architecture Neural Upload | +10% hacknet production<br>-15% hacknet nodes upgrade cost | ? | 2.5k |
+| 045 | 5               | x |   | Hacknet Node NIC Architecture Neural Upload | +10% hacknet production<br>-10% hacknet nodes cost | ? | 1.875k |
+| 046 | 5               | x |   | Hacknet Node Kernel Direct-Neural Interface | +25% hacknet production | ? | 7.5k |
+| 047 | 5               | x |   | Hacknet Node Core Direct-Neural Interface | +45% hacknet production | ? | 12.5k |
+| 048 | 21              |   |   | HemoRecirculator | +8% combat skills | ? | 10k |
+| 049 | 21              |   |   | Power Recirculator Core | +5% all skills<br>+10% exp for all skills | ? | 25k |
+| 050 | 21              | x |   | Bionic Arms | +30% strength skill<br>+30% dexterity skill | ? | 62.5k |
+| | | | | | | | |
 | | | | | | | | |
 
 ## Boni
