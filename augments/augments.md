@@ -10,6 +10,8 @@
 | 03 | The Black Hand   | |
 | 04 | BitRunners       | |
 | 05 | Netburners       | |
+| 06 | Deadalus         | |
+| 07 | The Covenant     | |
 | 11 | Sector 12        | 12, 13, 14, 15 |
 | 12 | Ishima           | 11, 13, 16 |
 | 13 | Volhaven         | 11, 12, 14, 15, 16 |
@@ -21,6 +23,7 @@
 | 22 | The Syndicate    | |
 | 23 | Speakers for the Dead| |
 | 24 | The Dark Army | |
+|  ||
 | ||
 
 ## Agumentations
@@ -32,7 +35,7 @@
 | 002 | 0,3             |   |   | Artificial Synaptic Potentiation | +5% hacking exp <br>+2% faster hgw<br> +5% hack success chance | 80m | 6.25k |
 | 003 | 0               | x |   | Neural-Retention Enhancement | +25% hacking exp | 250m | 20k |
 | 004 | 0, 3, 14, 15    |   |   | DataJack | +25% hack power | 450m | 112.5k |
-| 005 | 0, 3            |   |   | Embedded Netburner Module | +8% hacking skill | 250m | 15k |
+| 005 | 0,3             |   |   | Embedded Netburner Module | +8% hacking skill | 250m | 15k |
 | 006 | 0, 1            |   |   | Cranial Signal Processor - Gen I | +5% hacking skill <br>+1% faster hgw | 70m | 10k |
 | 007 | 0, 1            |   |006| Cranial Signal Processor - Gen II | +7% hacking skill<br>+2% faster hgw<br>+5% hack success chance | 125m | 18.75k |
 | 008 | 0, 3            |   |007| Cranial Signal Processor - Gen III | +9% hacking skill<br>+2% faster hgw<br>+15% hack success chance | 550m | 50k |
@@ -80,19 +83,27 @@
 | 049 | 21,22,24        |   |   | Power Recirculator Core | +5% all skills<br>+10% exp for all skills | ? | 25k |
 | 050 | 21              | x |   | Bionic Arms | +30% strength skill<br>+30% dexterity skill | ? | 62.5k |
 | 051 | 13              | x |   | DermaForce Particle Barrier | +40% defense skill | 50m | 15k |
-| 052 | 22,24           |   |032| Augmented Targeting III | +30% dexterity skill | 115m | 27.5k |
-| 053 | 22,24           |   |039| Combat Rib III | +18% strength skill<br>+18% defense skill | 120m | 35k |
-| 054 | 22              |   |   | NEMEAN Subdermal Weave | +120% defense skill | 3.25b | 875k |
+| 052 | 22,24,7         |   |032| Augmented Targeting III | +30% dexterity skill | 115m | 27.5k |
+| 053 | 22,24,7         |   |039| Combat Rib III | +18% strength skill<br>+18% defense skill | 120m | 35k |
+| 054 | 22,6,7          |   |   | NEMEAN Subdermal Weave | +120% defense skill | 3.25b | 875k |
 | 055 | 22,23           |   |   | Bionic Spine | +15% combat skills | 125m | 45k |
 | 056 | 22,23           |   |   | Bionic Legs | +60% agility skill | 375m | 150k |
 | 057 | 22,23,24        |   |   | The Shadow's Simulacrum | +15% reputation from factions and companies | 400m | 37.5k |
 | 058 | 22              | x |   | BrachiBlades | +15% strength skill<br>+15% defense skill<br>+15 crime money<br>+10% crime success rate | 90m | 12.5k |
 | 059 | 24              | x |050| Graphene Bionic Arms Upgrade | +85% strength skill<br>+85% dexterity skill | 3.75b | 500k |
 | 060 | 23              | x |   | Unstable Circadian Modulator | +15% reputation from factions<br>+25% reputation from companies<br>+70% work money| 5b | 362.5k |
-| 061 | 23              |   |   | Synthetic Heart | +50% strength skill<br>+50% agility skill | 2.875b | 750k |
-| 062 | 23              |   |   | Synfibril Muscle | +30% strength skill<br>+30% defense skill | 1.125b | 437.5k |
+| 061 | 23,6,7          |   |   | Synthetic Heart | +50% strength skill<br>+50% agility skill | 2.875b | 750k |
+| 062 | 23,6,7          |   |   | Synfibril Muscle | +30% strength skill<br>+30% defense skill | 1.125b | 437.5k |
 | 063 | 23              | x |058| Graphene BrachiBlades Upgrade | +40% strength skill<br>+40% defense skill<br>+30% crime money<br>+10% crime success rate | 2.5b | 225k |
-| | | | | | | | |
+| 064 | 6,7             |   |036| Embedded Netburner Module Core V3 Upgrade | +10% hacking skill<br>+25% hacking exp<br>+5% faster hgw<br>+10% hack success chance<br>+40% hack power | 7.5b | 1.75m |
+| 065 | 6,7             |   |005| Embedded Netburner Module Analyze Engine | +10% faster hgw | 6b | 625k |
+| 066 | 6,7             |   |005| Embedded Netburner Module Direct Memory Access Upgrade | +20% hack success chance<br>+40 hack power | 7b | 1m |
+| 067 | 6               | x |   | The Red Pill | red pill! | 0 | 2.5m |
+| 068 | 7               |   |   | Graphene Bone Lacings | +70% strength skill<br>+70% defense skill | 4.25b | 1.25m |
+| 069 | 7               | x |   | SPTN-97 Gene Modification | +15% hacking skill<br>+75% combat skills | 4.875b | 1.25m |
+|  |                |  |   |  | |  | |
+|  |                |  |   |  | |  | |
+|  |                |  |   |  | |  | |
 
 ## Boni
 

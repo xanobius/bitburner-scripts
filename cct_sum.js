@@ -48,7 +48,9 @@ function factorialize (num){
 export function solveSumTwo(input){
   const target = input[0]
   const numbers = input[1]
-  const combos = countValidCombos(numbers, -1, target)
+  let combos = []
+  for(let i = 0; i < numbers.length; i++)
+    combos = [...combos, ...countValidCombosV2(numbers, 0, target)]
   // check for doubles first?
   const strCombos = combos.map((numbers) => {
       return {
@@ -81,6 +83,24 @@ export function solveSumTwo(input){
     },0) /* */
 }
 
+//
+function countValidCombosV2(all, index, target, total = [0, []]) {
+  const newTot = total[0] + all[index]
+  if(newTot > target) return []
+  total[1].push(all[index])
+  if(newTot === target){
+    return [total[1]]
+  }
+  total[0] = newTot
+
+  let validCombos = []
+  for(let i = 0; i < all.length; i++){
+    validCombos = [...validCombos, ...countValidCombosV2(all, i, target, [...total])]
+  }
+  return validCombos
+}
+
+
 
 /*
  *  Start with one before 0 to make the first element optional as well
@@ -98,7 +118,7 @@ function countValidCombos(all, start, target, total = [0]){
     validCombos = [ ...validCombos, ...countValidCombos(all, i, target, [...total])]
 
     // go through possible multiples of the current number
-
+  /*
     let t = newTotal + all[start]
     let nTot = [...total, all[start]]
     for(; t < target; t += all[start]) {
@@ -108,6 +128,7 @@ function countValidCombos(all, start, target, total = [0]){
     if(t === target){
       validCombos = [...validCombos, nTot.slice(1)]
     }
+   */
 
   }
 
