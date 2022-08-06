@@ -18,6 +18,7 @@
 | 16 | Aevum            | 12, 13, 14, 15 |
 | 20 | Slum Snakes      | |
 | 21 | Tetrads          | | 
+| 22 | The Syndicate    | |
 
 ## Agumentations
 
@@ -36,7 +37,7 @@
 | 010 | 0               | x |   | CRTX42-AA Gene Modification | +8% hacking skill<br>+15% hacking exp | 225m | 45k |
 | 011 | 1               |   |   | Synaptic Enhancement Implant | +3% faster hgw | 7.5m | 2k |
 | 012 | 1               |   |   | Neurotrainer I | +10% exp all skills | 4m | 1k |
-| 013 | 2               |   |   | Nanofiber Weave | +20% strength skill<br>+20% defense skill | 125m | 37.5k |
+| 013 | 2, 22           |   |   | Nanofiber Weave | +20% strength skill<br>+20% defense skill | 125m | 37.5k |
 | 014 | 2, 12           |   |   | Wired Reflexes | +5% dexterity skill<br>+5% agility skill | 2.5m | 1.25k |
 | 015 | 2, 12, 14, 15   |   |   | Speech Processor Implant | +20% charisma skill | 50m | 7.5k |
 | 016 | 2, 14, 15       |   |   | Nuoptimal Nootropic Injector Implant | +20% reputation from companies | 20m | 5k |
@@ -47,7 +48,7 @@
 | 021 | 14, 12, 15      |   |   | Neuralstimulator | +12% hacking exp<br>+2% faster hgw<br>+10% hack success chance | 3b | 50k |
 | 022 | 14              | x |   | Neuregen Gene Modification | +40% hacking exp | 375m | 37.5k |
 | 023 | 12              |   |   | Augmented Targeting I | +10% dexterity skill | 15m | 5k |
-| 024 | 12              |   |   | Combat Rib I | +10% strength skill<br>+10% defense skill | 23.75m | 7.5k |
+| 024 | 12,13,20        |   |   | Combat Rib I | +10% strength skill<br>+10% defense skill | 23.75m | 7.5k |
 | 025 | 12              | x |   | INFRARET Enhancement | +10% dexterity skill<br>+10% crime money<br>+25% crime success rate | 30m | 7.5k |
 | 026 | 15              | x |   | NutriGen Implant | +20% combat exp | 2.5m | 6.25k |
 | 027 | 3               |   |   | Enhanced Myelin Sheathing | +8% hacking skill<br>+10% hacking exp<br>+3% faster hgw | 1.375b | 100k |
@@ -63,7 +64,7 @@
 | 036 | 4               | x |   | Neural Accelerator | +10% hacking skill<br>+15% hacking exp<br>+20% hack power | 1.75b | 200k |
 | 037 | 4               | x |030| Cranial Signal Processor - Gen V | +30% hacking skill<br>+25 hack power<br>+75% grow power | 2.25b | 250k |
 | 038 | 4               | x |   | BitRunners Neurolink | +15% hacking skill<br>+20% hacking exp<br>+5% faster hgw<br>+10% hack success chance<br>Start with FTPCrack and relaySMTP | 4.375b | 875k |
-| 039 | 20              |   |   | Combat Rib I | +10% strength skill<br>+10% defense skill | ? | 7.5k |
+| 039 | 13              |   |   | Combat Rib II | +14% strength skill<br>+14% defense skill | 65m | 18.75 |
 | 040 | 20,21           |   |   | LuminCloaking-V1 Skin Implant | +5% agility skill<br>+10% crime money | ? | 1.5k |
 | 041 | 20,21           |   |040| LuminCloaking-V2 Skin Implant | +10% defense skill<br>+10% agility skill<br>+25% crime money | ? | 5k |
 | 042 | 20              | x |   | SmartSonar Implant | +10% dexterity skill<br>+15% dexterity exp<br>+25% crime money | ? | 22.5k |
@@ -75,6 +76,14 @@
 | 048 | 21              |   |   | HemoRecirculator | +8% combat skills | ? | 10k |
 | 049 | 21              |   |   | Power Recirculator Core | +5% all skills<br>+10% exp for all skills | ? | 25k |
 | 050 | 21              | x |   | Bionic Arms | +30% strength skill<br>+30% dexterity skill | ? | 62.5k |
+| 051 | 13              | x |   | DermaForce Particle Barrier | +40% defense skill | 50m | 15k |
+| 052 | 22              |   |032| Augmented Targeting III | +30% dexterity skill | 115m | 27.5k |
+| 053 | 22              |   |039| Combat Rib III | +18% strength skill<br>+18% defense skill | 120m | 35k |
+| 054 | 22              |   |   | NEMEAN Subdermal Weave | +120% defense skill | 3.25b | 875k |
+| 055 | 22              |   |   | Bionic Spine | +15% combat skills | 125m | 45k |
+| 056 | 22              |   |   | Bionic Legs | +60% agility skill | 375m | 150k |
+| 057 | 22              |   |   | The Shadow's Simulacrum | +15% reputation from factions and companies | 400m | 37.5k |
+| 058 | 22              | x |   | BrachiBlades | +15% strength skill<br>+15% defense skill<br>+15 crime money<br>+10% crime success rate | 90m | 12.5k |
 | | | | | | | | |
 | | | | | | | | |
 

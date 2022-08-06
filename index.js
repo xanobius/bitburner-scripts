@@ -1,4 +1,4 @@
-import { solveSum,  } from "./cct_sum.js"
+import { solveSum, solveSumTwo } from "./cct_sum.js"
 import { arrayJumper, testCases as AJTestCases } from "./cct_arrayjump.js"
 // import { compressRle, decompressLZ, lzDecompressTestCases, rleTestCases as RLETestCases } from "./cct_compressions.js"
 // import { generateIp, testCases } from "./cct_generateIps.js";
@@ -17,9 +17,12 @@ const fakeNs = {
 // decodeHamming('1001101011')
 //testStuff(arrayJumper, fakeNs,  AJTestCases)
 //console.log(getValidMathExpressions(["45996034436", 20]))
+console.log(solveSumTwo([38, [1,2,3,6,9,10,11,14,18,21]]))
+
+/*
 getMinTriangleSum([
   [2],
   [3,4],
   [6,5,7],
   [4,1,8,3]
-])
+])*/
