@@ -1,6 +1,7 @@
 import { solveSum, solveSumTwo } from "./cct_sum.js"
 import { arrayJumper, testCases as AJTestCases } from "./cct_arrayjump.js"
-import { mergeIntervals } from "./cct_mergeIntervals.js";
+import { mergeIntervals, testCases as MITests } from "./cct_mergeIntervals.js";
+import { shortestPathSimple} from "./cct_shortestPath.js";
 import {
   compressRle,
   decompressLZ,
@@ -24,27 +25,40 @@ const fakeNs = {
 // decodeHamming('1001101011')
 //testStuff(arrayJumper, fakeNs,  AJTestCases)
 //console.log(getValidMathExpressions(["45996034436", 20]))
-
-console.log(stockTradeV4([4, [8,82,127,143,149,96,179,112,163,200,3,159,156,5,59,138,123,52,5,117,165,125,53,84,191,118,83,109,41,138,66,29,58,82,137,173,106,111,19,135,39,169,25,133,88,99,16,90]]))
 // console.log(stockTradeV4([3, [-1, 5, 13, 33, 53, 73, 93, 113, 123, 153, 0, 200,13, 201, 3, 200, 0, 200]]))
 // console.log(stockTradeV4([ 3, [99,88,77,11,1]]))
 
-/*
-8 200
-3 159
-5 191
-29 173
-
-192+156+186+144 -> 678
-
-5 165
-53 191
-
-192+156+160+138
- */
 
 // wG1H6gt0WH6gt0WHjc6a22EuY154FdoO264gg264ggFdoO264ggDe742D8842l4793wSm693wSm6ggDe742D8842l4793wSm682FQ82FQ82FD8842l4793wSm682FQ82FQ82FQl4793wSm682FQ3wSm682FQwSm682FQwSm682FQFQ
+// console.log(mergeIntervals([[11,12],[10,19],[21,30],[11,19],[24,27],[12,20],[2,11],[5,8],[16,17],[14,22],[18,21],[21,23],[24,33],[18,27],[12,19],[24,27],[19,27]]))
+console.log(stockTradeV4([4, [8,82,127,143,149,96,179,112,163,200,3,159,156,5,59,138,123,52,5,117,165,125,53,84,191,118,83,109,41,138,66,29,58,82,137,173,106,111,19,135,39,169,25,133,88,99,16,90]]))
+/*
+console.log(shortestPathSimple([[0,0,0,0,0,0,0,1],
+  [0,0,0,0,0,1,0,0],
+  [0,0,0,0,0,0,1,0],
+  [0,1,0,0,0,0,1,0],
+  [0,1,0,0,0,1,1,1],
+  [0,0,0,1,1,0,0,0],
+  [1,1,0,0,0,0,0,0],
+  [0,1,0,0,0,0,0,0],
+  [0,1,0,1,0,0,0,0]]))
+/*
 
+ */
+
+  /*
+console.log(shortestPathSimple([
+  [0,0,0,0,0,0,0,0,1],
+  [1,0,0,0,0,0,0,1,1],
+  [0,0,1,0,0,0,0,0,0],
+  [0,0,0,1,1,1,0,1,1],
+  [1,0,0,0,0,0,0,0,0],
+  [0,1,0,1,0,0,0,0,0],
+  [0,0,1,1,0,0,0,1,0],
+  [0,1,1,0,0,1,0,0,0],
+  [0,0,0,0,0,0,0,0,1],
+  [0,1,0,0,0,0,0,1,0],
+  [0,0,0,0,0,0,0,0,0]]))
 /*
 'contract-51362.cct' (Find Largest Prime Factor) @ sigma-cosmetics yet
 'contract-760245.cct' (Compression II: LZ Decompression) @ hong-fang-tea yet

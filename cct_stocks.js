@@ -160,10 +160,10 @@ function stockTradeXTransacts(transacts, days){
     allStarts.push(tradeRekSumsMinimized(days, i, transacts))
   return allStarts.sort((a, b) => a < b ? 1 : -1)[0]
   /*
+   // General solution, but with a huge overhead!
+
   const allResults = tradeRekSums(days, 0)
-
   console.log(allResults)
-
   const bestResult = allResults
     .map(sol => {
       let sorted = sol.sort((a, b) => a < b ? 1 : - 1)
@@ -267,5 +267,8 @@ export const v4TestCases = [
   },{
     input: [5, [1, 13, 33, 53, 73, 93, 113, 123, 153]],
     result: 152
+  },{
+    input: [4, [8,82,127,143,149,96,179,112,163,200,3,159,156,5,59,138,123,52,5,117,165,125,53,84,191,118,83,109,41,138,66,29,58,82,137,173,106,111,19,135,39,169,25,133,88,99,16,90]],
+    result: 684
   }
 ]

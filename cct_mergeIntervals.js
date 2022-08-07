@@ -22,8 +22,6 @@ export function mergeIntervals(input) {
     merged = mergeEm(merged)
   }while(oldLength !== merged.length)
 
-  console.log(merged)
-
   return merged.sort((a, b) => a[0] > b[0] ? 1 : -1)
 }
 
