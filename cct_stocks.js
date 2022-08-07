@@ -155,7 +155,15 @@ export function stockTradeV4(inp){
 }
 
 function stockTradeXTransacts(transacts, days){
+  const allStarts = []
+  for(let i = 0; i < days.length; i++)
+    allStarts.push(tradeRekSumsMinimized(days, i, transacts))
+  return allStarts.sort((a, b) => a < b ? 1 : -1)[0]
+  /*
   const allResults = tradeRekSums(days, 0)
+
+  console.log(allResults)
+
   const bestResult = allResults
     .map(sol => {
       let sorted = sol.sort((a, b) => a < b ? 1 : - 1)
@@ -165,6 +173,47 @@ function stockTradeXTransacts(transacts, days){
     })
     .sort((a, b) => a < b ? 1 : -1)
   return bestResult.length >= 1 ? bestResult[0] : 0
+   */
+}
+
+function tradeRekSumsMinimized(days, start, transactions, profit = 0) {
+  // no more transaction possible, last element / no more transactions
+  if(start >= days.length - 1 || transactions === 0){
+    return profit
+  }
+
+  // Search next valley/low point
+  let buyIndex = -1;
+  for(let i = start; i < days.length - 1; i++){
+    if(days[i + 1] > days[i]){
+      buyIndex = i;
+      break;
+    }
+  }
+  // no more valleys, return profit so far
+  if(buyIndex === -1) return profit
+
+  const possibleProfits = []
+  for(let i = buyIndex + 1; i < days.length; i++){
+    if(days[i] <= days[buyIndex]){
+      // no win, but maybe the better valley?
+      possibleProfits.push(
+        tradeRekSumsMinimized(days, i + 1, transactions, profit)
+      )
+      continue
+    } // no win
+    const win = days[i] - days[buyIndex]
+      // transaction with last day
+    if(i === days.length - 1){
+      possibleProfits.push(profit + win)
+    }else{
+      possibleProfits.push(
+        tradeRekSumsMinimized(days, i + 1, transactions - 1, profit + win)
+      )
+    }
+  }
+  // console.log(possibleProfits.join(','))
+  return possibleProfits.sort((a, b) => a < b ? 1 : -1)[0]
 }
 
 function tradeRekSums(days, start, profits = []) {

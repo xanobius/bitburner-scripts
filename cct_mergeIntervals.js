@@ -15,11 +15,14 @@ merges into [[1, 6], [8, 16]]
 
 export function mergeIntervals(input) {
   let merged = mergeEm(input);
+
   let oldLength = 0
   do {
     oldLength = merged.length
     merged = mergeEm(merged)
   }while(oldLength !== merged.length)
+
+  console.log(merged)
 
   return merged.sort((a, b) => a[0] > b[0] ? 1 : -1)
 }

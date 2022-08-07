@@ -48,14 +48,23 @@ function factorialize (num){
 export function solveSumTwo(input){
   const target = input[0]
   const numbers = input[1]
-  let combos = []
-  for(let i = 0; i < numbers.length; i++)
-    combos = [...combos, ...countValidCombosV2(numbers, 0, target)]
+
+  // let combos = BigInt(0)
+  // const cache = {}
+  // for(let i = 0; i < numbers.length; i++){
+  //   combos = combos + countValidCombosV4(numbers, i, target, [], cache)
+  // }
+  let combos = 0
+  for(let i = 0; i < numbers.length; i++){
+    combos = combos + countValidCombosWOPermutation(numbers, i, target, 0)
+  }
+  return combos;
+    //combos.push(countValidCombosV2(numbers, i, target))
   // check for doubles first?
   const strCombos = combos.map((numbers) => {
       return {
-        str: numbers.sort((a, b) => a > b ? 1 : -1).join('+'),
-        orig : numbers
+        str: numbers.split('+').sort((a, b) => a > b ? 1 : -1).join('+'),
+        orig : numbers.split('+').map(a => parseInt(a))
       }
     })
 
@@ -63,7 +72,7 @@ export function solveSumTwo(input){
     .filter((n, i) => { // remove doublicates
       return strCombos.findIndex(e => e.str === n.str) === i
     })
-    .map(e => e.orig) // get original data back
+    .map(e => e.orig).length // get original data back
     /*
     .reduce((tot, combo, i) => {
         // Permutations of a combo
@@ -83,20 +92,86 @@ export function solveSumTwo(input){
     },0) /* */
 }
 
-//
-function countValidCombosV2(all, index, target, total = [0, []]) {
-  const newTot = total[0] + all[index]
-  if(newTot > target) return []
-  total[1].push(all[index])
-  if(newTot === target){
-    return [total[1]]
+function countValidCombosV3(numbers, n, remaining, summands = []){
+  if(remaining < n) return []
+  if(remaining === n) {
+    summands.push(n)
+    // console.log(`Result I found ${summands.join('+')}`)
+    return [summands]
   }
-  total[0] = newTot
+
+  let valids = []
+  // is a multiple possible
+  if(remaining % n === 0){
+    const sClone = [...summands]
+    for(let i = 0; i < (remaining / n); i++){
+      sClone.push(n)
+    }
+    // console.log(`Result II found ${sClone.join('+')} (${remaining})`)
+    valids.push(sClone)
+  }
+  summands.push(n)
+  for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] === n)continue // skip, this would apply on multiply, reduce one recursion
+    valids = [
+      ...valids,
+      ...countValidCombosV3(numbers,
+           numbers[i],
+      remaining - n,
+          [...summands]
+      )]
+  }
+  return valids
+}
+
+function countValidCombosWOPermutation(numbers, index, target, total = 0) {
+  const newTotal = total + numbers[index]
+  if(newTotal > target) return 0
+  if(newTotal === target) {
+    return 1
+  }
+  let solutions = 0
+  for(let i = index; i < numbers.length; i++){
+    solutions += countValidCombosWOPermutation(numbers, i, target, newTotal)
+  }
+  return solutions
+}
+
+//
+function countValidCombosWithPermutations(all, index, remaining, total = [], cache) {
+  if(cache.hasOwnProperty(Number(remaining - all[index])))
+    return cache[Number(remaining - all[index])]
+
+  total.push(all[index])
+  if(all[index] > remaining) return BigInt(0)
+  if(all[index] === remaining){
+    //console.log(`Result found, add 1`)
+    return BigInt(1)
+  }
+
+  let validCombos = BigInt(0)
+  for(let i = 0; i < all.length; i++){
+    validCombos = validCombos + countValidCombosWithPermutations(all, i, remaining - all[index], [...total], cache)
+  }
+  if(!cache.hasOwnProperty(Number(remaining - all[index])))
+    cache[Number(remaining - all[index])] = validCombos
+  return validCombos
+}
+
+function countValidCombosV2(all, index, remaining, total = [], cache) {
+  total.push(all[index])
+  if(all[index] > remaining) return []
+  if(all[index] === remaining){
+    return [total.join('+'), 1]
+  }
 
   let validCombos = []
   for(let i = 0; i < all.length; i++){
-    validCombos = [...validCombos, ...countValidCombosV2(all, i, target, [...total])]
+    const res = countValidCombosV2(all, i, remaining - all[index], [...total], cache, pos1, pos2)
+    validCombos = [...validCombos, ...res[0]]
   }
+  if(!cache.hasOwnProperty(remaining - all[index]))
+    cache[remaining - all[index]] = validCombos.length
   return validCombos
 }
 
