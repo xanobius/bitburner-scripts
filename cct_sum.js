@@ -158,55 +158,32 @@ function countValidCombosWithPermutations(all, index, remaining, total = [], cac
   return validCombos
 }
 
-function countValidCombosV2(all, index, remaining, total = [], cache) {
-  total.push(all[index])
-  if(all[index] > remaining) return []
-  if(all[index] === remaining){
-    return [total.join('+'), 1]
-  }
-
-  let validCombos = []
-  for(let i = 0; i < all.length; i++){
-    const res = countValidCombosV2(all, i, remaining - all[index], [...total], cache, pos1, pos2)
-    validCombos = [...validCombos, ...res[0]]
-  }
-  if(!cache.hasOwnProperty(remaining - all[index]))
-    cache[remaining - all[index]] = validCombos.length
-  return validCombos
-}
-
-
-
 /*
- *  Start with one before 0 to make the first element optional as well
+Subarray with Maximum Sum
+You are attempting to solve a Coding Contract. You have 10 tries remaining, after which the contract will self-destruct.
+
+
+Given the following integer array, find the contiguous subarray (containing at least one number)
+which has the largest sum and return that sum. 'Sum' refers to the sum of all the numbers in the subarray.
+0,1,-10,5,-7,4,-5,-7,3,5,9,1,-3,1,-10,3,-10,0,-4,-7,7,5,-8,4,-5
  */
-function countValidCombos(all, start, target, total = [0]){
-  if(start !== -1) total.push(all[start])
-  const newTotal = total.reduce((t, a) => t+a, 0)
+const sumReducer = (tot, a) => tot + a
 
-  if(newTotal === target) return [total.slice(1)] // wrap array in array to allow spreading, also remove leading zero
-  if(newTotal > target) return []
-  if(start === all.length -1) return []
-
-  let validCombos = []
-  for(let i = start + 1; i < all.length; i++){
-    validCombos = [ ...validCombos, ...countValidCombos(all, i, target, [...total])]
-
-    // go through possible multiples of the current number
-  /*
-    let t = newTotal + all[start]
-    let nTot = [...total, all[start]]
-    for(; t < target; t += all[start]) {
-      validCombos = [...validCombos, ...countValidCombos(all, i, target, [...nTot])]
-      nTot = [...total, all[start]]
+export function subArraySums(inp){
+  let sum = inp[0]
+  let finalArr = [inp[0]]
+  for(let i = 0; i < inp.length; i++){
+    for(let j = inp.length; j >= i; j--){
+      let newSum = inp.slice(i, j).reduce(sumReducer, 0)
+      if(newSum > sum){
+        sum = newSum
+        finalArr = inp.slice(i, j)
+      }
     }
-    if(t === target){
-      validCombos = [...validCombos, nTot.slice(1)]
-    }
-   */
-
   }
-
-
-  return validCombos;
+  return finalArr
 }
+
+
+
+

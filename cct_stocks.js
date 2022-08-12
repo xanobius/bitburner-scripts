@@ -210,6 +210,10 @@ function tradeRekSumsMinimized(days, start, transactions, profit = 0) {
       possibleProfits.push(
         tradeRekSumsMinimized(days, i + 1, transactions - 1, profit + win)
       )
+      // Take the possibility in consideration that this one is NOT an ideal sum
+      possibleProfits.push(
+        tradeRekSumsMinimized(days, i + 1, transactions, profit)
+      )
     }
   }
   // console.log(possibleProfits.join(','))
@@ -270,5 +274,9 @@ export const v4TestCases = [
   },{
     input: [4, [8,82,127,143,149,96,179,112,163,200,3,159,156,5,59,138,123,52,5,117,165,125,53,84,191,118,83,109,41,138,66,29,58,82,137,173,106,111,19,135,39,169,25,133,88,99,16,90]],
     result: 684
+  },{
+  // Problem with more than 10 solutions -> the algorithm doesn't cut out the least ideal sum
+    input: [10,[53,3,146,6,152,134,195,77,122,100,12,165,98,161,184,154,21,193,48,77,91,13,62,200,170,161,160,42,183,21,185,124,14,150]],
+    result: 1392 // <- wrong
   }
 ]
