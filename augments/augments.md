@@ -25,6 +25,7 @@
 | 24 | The Dark Army    | |
 | 30 | MegaCorp         | |
 | 31 | Blade Industries | |
+| 32 | Four Sigma | |
 | 50 | Shadows of Anarchy | |
 | | | |
 
@@ -48,9 +49,9 @@
 | 013 | 2,22,23,24,31       |   |   | Nanofiber Weave | +20% strength skill<br>+20% defense skill | 125m | 37.5k |
 | 014 | 2,12,22,23,24       |   |   | Wired Reflexes | +5% dexterity skill<br>+5% agility skill | 2.5m | 1.25k |
 | 015 | 2,12,14,15          |   |   | Speech Processor Implant | +20% charisma skill | 50m | 7.5k |
-| 016 | 2, 14, 15           |   |   | Nuoptimal Nootropic Injector Implant | +20% reputation from companies | 20m | 5k |
-| 017 | 2,23                |   |   | Speech Enhancement | +10% charisma skill<br>+10% reputation from companies | 12.5m | 2.5k |
-| 018 | 2,22,30             |   |   | ADR-V1 Pheromone Gene | +10% reputation from factions and companies | 17.5m | 3.75k |
+| 016 | 2,14,15,32          |   |   | Nuoptimal Nootropic Injector Implant | +20% reputation from companies | 20m | 5k |
+| 017 | 2,23,32             |   |   | Speech Enhancement | +10% charisma skill<br>+10% reputation from companies | 12.5m | 2.5k |
+| 018 | 2,22,30,32          |   |   | ADR-V1 Pheromone Gene | +10% reputation from factions and companies | 17.5m | 3.75k |
 | 019 | 2                   | x |   | Social Negotiation Assistant (S.N.A) | +15% reputation from factions and companies<br>+10% work money | 30m | 6.25k |
 | 020 | 2                   | x |   | Neuroreceptor Management Implant | removes work penalty | 550m | 75k |
 | 021 | 14, 12, 15          |   |   | Neuralstimulator | +12% hacking exp<br>+2% faster hgw<br>+10% hack success chance | 3b | 50k |
@@ -61,7 +62,7 @@
 | 026 | 15                  | x |   | NutriGen Implant | +20% combat exp | 2.5m | 6.25k |
 | 027 | 3                   |   |   | Enhanced Myelin Sheathing | +8% hacking skill<br>+10% hacking exp<br>+3% faster hgw | 1.375b | 100k |
 | 028 | 3,30,31             |   |005| Embedded Netburner Module Core Implant | +7% hacking skill<br>+7% hacking exp<br>+3% faster hgw<br>+3% hack success chance<br>+10% hack power | 2.5b | 175k |
-| 029 | 3                   |   |   | Neurostimulator | +12% hacking exp<br>+2% faster hgw<br>+10% hack success chance | 3b | 50k |
+| 029 | 3,32                |   |   | Neurostimulator | +12% hacking exp<br>+2% faster hgw<br>+10% hack success chance | 3b | 50k |
 | 030 | 3                   |   |008| Cranial Signal Processor - Gen IV | +2% faster hgw<br>+20% hack power<br>+25% grow power | 1.1b | 125k |
 | 031 | 3                   | x |   | The Black Hand | +10% hacking skill<br>+15% strength skill<br>+15% dexterity skill<br>+2% faster hgw<br>+10% hack power | 550m | 100k |
 | 032 | 11,22,24,31         |   |023| Augmented Targeting II | +20% dexterity skill | 42.5m | 8.75 k |
@@ -105,11 +106,14 @@
 | 069 | 7                   | x |   | SPTN-97 Gene Modification | +15% hacking skill<br>+75% combat skills | 4.875b | 1.25m |
 | 070 | 30                  |   |056| Graphene Bionic Legs Upgrade | +150% agility skill | 9b | 750k |
 | 071 | 30                  | x |   | CordiARC Fusion Reactor | +35% combat skills<br>+35% combat exp | 10b | 1.125m |
-| 072 | 31                  |   |   | PC Direct-Neural Interface | +8% hacking skill<br>+30% reputation from companies | 7.5b | 375k |
+| 072 | 31,32               |   |   | PC Direct-Neural Interface | +8% hacking skill<br>+30% reputation from companies | 7.5b | 375k |
 | 073 | 31                  |   |072| PC Direct-Neuarl Interface Optimization Submodule | +10% hacking skill<br>+75% reputation from companies | 9b | 500k |
 | 074 | 31                  |   |   | HyperSight Corneal Implant | +40% dexterity skill<br>+3% faster hgw<br>+10% hack power | 5.5b | 150k |
 | 075 | 31                  | x |   | Neotra | +55% strength skill<br>+55% defense skill | 5.75b | 562.5k |
-|  |                |  |   |  | |  | |
+| 076 | 32                  |   |   | Enhanced Social Interaction Implant | +60% charisma skill<br>+60% charisma exp | ? | 375k |
+| 077 | 32                  |   |   | FocusWire  | +5% exp for all skills<br>+10% reputation from companies<br>+20% work money |  | 75k |
+| 078 | 32                  |   |   | ADR-V2 Pheromone Gene | +20% reputation from factions and companies |  | 62.5k |
+| 079 | 32                  |   |   | Neurotrainer III | +20% exp for all skills |  | 25k |
 |  |                |  |   |  | |  | |
 |  |                |  |   |  | |  | |
 | xxx | 50              | x |   | SoA - phyzical WKS harmonizer | Make all minigames easier | X | 10k |
