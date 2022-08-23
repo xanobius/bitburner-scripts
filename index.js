@@ -19,12 +19,14 @@ import { getMinTriangleSum} from "./cct_MinimumPathTriangle.js";
 import { findLargestPrimeFactor} from "./cct_largestPrime.js";
 import { findUniquePathOne, findUniquePathTwo, testCasesTwo as UPTTest, testCasesOne as UPTest} from "./cct_uniquePath.js";
 import { sanitizeParentheses } from "./cct_parantheses.js";
+import {decryptCaesar, decryptVigenere} from "./cct_encryption.js";
 
 const fakeNs = {
   tprint : (a) => { console.log(a) }
 }
 
-console.log(stockTradeV4([10,[53,3,146,6,152,134,195,77,122,100,12,165,98,161,184,154,21,193,48,77,91,13,62,200,170,161,160,42,183,21,185,124,14,150]]))
+//console.log(decryptCaesar(["ABCXYZ", 1]))
+console.log(decryptVigenere(["PRINTMOUSELINUXDEBUGMEDIA", "BROWSER"]))
 
 /*
 143+189+153+76+172+43+187+141+164+136
