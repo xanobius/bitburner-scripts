@@ -25,8 +25,8 @@ const fakeNs = {
   tprint : (a) => { console.log(a) }
 }
 
-//console.log(decryptCaesar(["ABCXYZ", 1]))
-console.log(decryptVigenere(["PRINTMOUSELINUXDEBUGMEDIA", "BROWSER"]))
+console.log(decryptCaesar(["ABC XYZ", 3]))
+// console.log(decryptVigenere(["PRINTMOUSELINUXDEBUGMEDIA", "BROWSER"]))
 
 /*
 143+189+153+76+172+43+187+141+164+136

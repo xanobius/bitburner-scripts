@@ -28,7 +28,7 @@ const alpha = [...Array(26)].map((c, i) => String.fromCharCode(65 + i))
 export function decryptCaesar(inp)
 {
   const [plain, shift] = inp
-  return plain.split('').map(c => alphaRot(shift, c)).join('')
+  return plain.split('').map(c => c === ' ' ? ' ' : alphaRot(shift, c)).join('')
 }
 
 export function decryptVigenere(inp)
